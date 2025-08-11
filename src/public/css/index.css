@@ -1,11 +1,18 @@
-.todo__alert{
-    max-width: 1230px;
-}
+
 .todo__alert--success{
-    margin: 0 auto;
+    padding:10px 30px;
     background: #d1e7dd;
     color: #0f5132;
     border: #badbcc;
+}
+.todo__alert--danger {
+    padding: 10px 0;
+    background: #f8d7da;
+    color: #842029;
+    border: #f5c2c7;
+}
+.todo__alert--danger ul {
+    margin: 0;
 }
 .todo__content{
     margin: 0 auto;
@@ -24,12 +31,26 @@
     width: 70%;
 }
 .create-form__item-input {
-    border: 1px solid
-    #ddd;
+
+    width: 100%;
+    height: 40px;
+    border: 1px solid#ddd;
+    border-radius: 3px;
 }
 .create-form__button{
     width: 20%;
 }
+.create-form__button-submit{
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+}
+
 .todo-table{
     margin: 30px auto;
     width: 70%;
@@ -42,20 +63,43 @@
     border-bottom: 1px solid #ddd;
 }
 
+.todo-table__item:first-of-type {
+    padding: 12px;
+    width: 90%;
+}
 
-.create-form__button-submit,
+.update-form{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.update-form__item{
+    width: 80%;
+    line-height: 50px;
+}
+.update-form__item-input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.update-form__button{
+    width: 50px;
+}
+
+.delete-form__button{
+    width:50px;
+}
+
 .update-form__button-submit,
 .delete-form__button-submit{
-    padding: 10px;
-    width: 70%;
-    height: 50px;
+    margin:auto 0;
+    padding: 5px;
+    width: 100%;
+    height: 30px;
     border: none;
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
-}
-.create-form__button-submit{
-    background: #000;
 }
 .update-form__button-submit{
     background: #0000ff;
