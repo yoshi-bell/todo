@@ -17,6 +17,7 @@
             <a class="header__logo" href="/">
                 Todo
             </a>
+            <a class="header__category-list" href="/categories">カテゴリ一覧</a>
         </div>
     </header>
 
@@ -24,4 +25,5 @@
         @yield('content')
     </main>
 </body>
+
 </html>

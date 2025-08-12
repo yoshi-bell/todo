@@ -17,26 +17,40 @@
 .todo__content{
     margin: 0 auto;
     padding: 30px 15px;
+    width: 70%;
     max-width: 1230px;
 }
-
+.create-form__title{
+    font-weight: bold;
+}
 .create-form{
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
 .create-form__item{
-    width: 70%;
+    width: 75%;
+    display:flex;
+    gap: 15px;
 }
 .create-form__item-input {
 
-    width: 100%;
+    width: 70%;
     height: 40px;
     border: 1px solid#ddd;
     border-radius: 3px;
 }
+.create-form__item-input--category {
+
+    width: 25%;
+    height: 40px;
+    border: 1px solid#ddd;
+    border-radius: 3px;
+}
+
+
 .create-form__button{
     width: 20%;
 }
@@ -53,7 +67,7 @@
 
 .todo-table{
     margin: 30px auto;
-    width: 70%;
+    width: 100%;
     text-align: left;
 }
 .todo-table__inner{
@@ -65,7 +79,7 @@
 
 .todo-table__item:first-of-type {
     padding: 12px;
-    width: 90%;
+    width: 40%;
 }
 
 .update-form{
@@ -74,10 +88,15 @@
     align-items:center;
 }
 .update-form__item{
-    width: 80%;
+    width: 100%;
     line-height: 50px;
 }
 .update-form__item-input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.update-form__item-input--category{
     width: 100%;
     border: none;
     outline: none;
