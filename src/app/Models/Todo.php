@@ -21,4 +21,16 @@ class Todo extends Model
         // return $this->belongsTo('App\Models\Category');でも機能は同じ
         // クラス名定数Category::classを使うほうがメリットが大きい
     }
+    public function scopeCategorySearch($query,$category_id)
+    {
+        if(!empty($category_id)){
+            $query->where('category_id',$category_id);
+        }
+    }
+    public function scopeKeywordSearch($query,$keyword)
+    {
+        if(!empty($keyword)){
+            $query->where('content','like' , '%' .$keyword . '%');
+        }
+    }
 }

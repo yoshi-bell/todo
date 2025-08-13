@@ -3,13 +3,13 @@
     padding:10px 30px;
     background: #d1e7dd;
     color: #0f5132;
-    border: #badbcc;
+    border: 1px solid #badbcc;
 }
 .todo__alert--danger {
     padding: 10px 0;
     background: #f8d7da;
     color: #842029;
-    border: #f5c2c7;
+    border: 1px  solid #f5c2c7;
 }
 .todo__alert--danger ul {
     margin: 0;
@@ -17,44 +17,47 @@
 .todo__content{
     margin: 0 auto;
     padding: 30px 15px;
-    width: 70%;
     max-width: 1230px;
 }
-.create-form__title{
-    font-weight: bold;
-}
-.create-form{
+.section__title{
     margin: 0 auto;
-    width: 100%;
+    width: 70%;
+}
+.create-form, .search-form{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 70%;
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
-.create-form__item{
-    width: 75%;
+.create-form__item,.search-form__item{
+    width: 70%;
     display:flex;
-    gap: 15px;
 }
-.create-form__item-input {
-
+.create-form__item-input,.search-form__item-input{
+    margin-right: 10px;
+    padding: 10px;
     width: 70%;
     height: 40px;
-    border: 1px solid#ddd;
+    border: 1px solid #ddd;
     border-radius: 3px;
 }
-.create-form__item-input--category {
 
-    width: 25%;
+.create-form__item-select,.search-form__item-select{
+    padding: 10px;
+    width: 30%;
     height: 40px;
-    border: 1px solid#ddd;
+    border: 1px solid #ddd;
     border-radius: 3px;
+    appearance: none;
 }
 
 
-.create-form__button{
+.create-form__button,.search-form__button{
     width: 20%;
 }
-.create-form__button-submit{
+.create-form__button-submit,.search-form__button-submit{
     padding: 10px;
     width: 100%;
     height: 40px;
@@ -67,8 +70,8 @@
 
 .todo-table{
     margin: 30px auto;
-    width: 100%;
-    text-align: left;
+    width: 70%;
+    text-align: center;
 }
 .todo-table__inner{
     width: 100%;
@@ -76,10 +79,19 @@
 .todo-table__row{
     border-bottom: 1px solid #ddd;
 }
+.todo-table__header{
+    padding: 12px;
+    width: 20%;
+    text-align: left;
+    font-weight: bold;
+}
+.todo-table__header-span{
+    margin-right: 40%;
+}
 
 .todo-table__item:first-of-type {
     padding: 12px;
-    width: 40%;
+    width: 90%;
 }
 
 .update-form{
@@ -88,13 +100,17 @@
     align-items:center;
 }
 .update-form__item{
-    width: 100%;
-    line-height: 50px;
+    width: 40%;
+    line-height: 50%;
 }
 .update-form__item-input{
     width: 100%;
     border: none;
     outline: none;
+}
+.update-form__item-p{
+    text-align:left;
+    font-size:13px;
 }
 .update-form__item-input--category{
     width: 100%;
@@ -111,10 +127,8 @@
 
 .update-form__button-submit,
 .delete-form__button-submit{
-    margin:auto 0;
     padding: 5px;
     width: 100%;
-    height: 30px;
     border: none;
     border-radius: 3px;
     color: #fff;
